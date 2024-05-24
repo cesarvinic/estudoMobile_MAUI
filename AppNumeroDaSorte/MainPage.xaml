@@ -17,41 +17,93 @@
                 WidthRequest="74" />
 
             <Label
-                IsVisible="True"
+                x:Name="lbNameApp"
                 Margin="0,20,0,120"
                 HorizontalOptions="Center"
+                IsVisible="True"
                 Text="Número da sorte"
                 TextColor="#00AB37"
                 VerticalOptions="Center" />
 
-            <VerticalStackLayout IsVisible="False">
-                <Label Text="O número da sorte é:" HorizontalOptions="Center" Margin="0, 20, 0, 0" />
+            <VerticalStackLayout x:Name="vslContainerLuckNumbers" IsVisible="False">
+                <Label
+                    Margin="0,20,0,0"
+                    HorizontalOptions="Center"
+                    Text="O número da sorte é:" />
 
-                <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" Margin="0, 70">
-                    <Border Stroke="#00AB37" Padding="10, 5" StrokeShape="RoundRectangle 8">
-                        <Label Text="01" FontSize="24" TextColor="#00AB37" />
+                <HorizontalStackLayout
+                    Margin="0,70"
+                    HorizontalOptions="Center"
+                    Spacing="5">
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="lbLuckNumber01"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
                     </Border>
-                    <Border Stroke="#00AB37" Padding="10, 5" StrokeShape="RoundRectangle 8">
-                        <Label Text="01" FontSize="24" TextColor="#00AB37" />
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="lbLuckNumber02"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
                     </Border>
-                    <Border Stroke="#00AB37" Padding="10, 5" StrokeShape="RoundRectangle 8">
-                        <Label Text="01" FontSize="24" TextColor="#00AB37" />
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="lbLuckNumber03"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
                     </Border>
-                    <Border Stroke="#00AB37" Padding="10, 5" StrokeShape="RoundRectangle 8">
-                        <Label Text="01" FontSize="24" TextColor="#00AB37" />
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="lbLuckNumber04"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
                     </Border>
-                    <Border Stroke="#00AB37" Padding="10, 5" StrokeShape="RoundRectangle 8">
-                        <Label Text="01" FontSize="24" TextColor="#00AB37" />
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="lbLuckNumber05"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
                     </Border>
-                    <Border Stroke="#00AB37" Padding="10, 5" StrokeShape="RoundRectangle 8">
-                        <Label Text="01" FontSize="24" TextColor="#00AB37" />
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="lbLuckNumber06"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
                     </Border>
                 </HorizontalStackLayout>
 
-                <Label Text="Boa Sorte!" HorizontalOptions="Center" Margin="0, 0, 0, 50"/>
+                <Label
+                    Margin="0,0,0,50"
+                    HorizontalOptions="Center"
+                    Text="Boa Sorte!" />
             </VerticalStackLayout>
-            
-            <Button HorizontalOptions="Center" Text="Gerar número da sorte" />
+
+            <Button Clicked="btnLuckNumber_Clicked" HorizontalOptions="Center" Text="Gerar número da sorte" />
         </VerticalStackLayout>
 
     </ScrollView>
