@@ -5,9 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="FlexLayoutPage">
 
-    <FlexLayout Direction="ColumnReverse">
+    <FlexLayout Direction="Column" AlignItems="Start">
         <Label Padding="10" BackgroundColor="RosyBrown"   Text="Linha 1" />
-        <Label Padding="10" BackgroundColor="SandyBrown"  Text="Linha 2" />
-        <Label Padding="10" BackgroundColor="SaddleBrown" Text="Linha 3" />
+        <Label Padding="10" FlexLayout.AlignSelf="Center" BackgroundColor="SandyBrown"  Text="Linha 2" />
+        <Label Padding="10" FlexLayout.AlignSelf="End" BackgroundColor="SaddleBrown" Text="Linha 3" />
+        <Label Padding="10" FlexLayout.AlignSelf="Stretch" BackgroundColor="Black" TextColor="White" Text="Linha 4" />
     </FlexLayout>
 </ContentPage>
