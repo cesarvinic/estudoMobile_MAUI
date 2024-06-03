@@ -5,10 +5,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="FlexLayoutPage">
 
-    <FlexLayout Direction="Column" AlignItems="Start">
-        <Label Padding="10" BackgroundColor="RosyBrown"   Text="Linha 1" />
-        <Label Padding="10" FlexLayout.AlignSelf="Center" BackgroundColor="SandyBrown"  Text="Linha 2" />
-        <Label Padding="10" FlexLayout.AlignSelf="End" BackgroundColor="SaddleBrown" Text="Linha 3" />
-        <Label Padding="10" FlexLayout.AlignSelf="Stretch" BackgroundColor="Black" TextColor="White" Text="Linha 4" />
+    <FlexLayout Direction="Row" AlignItems="Start" JustifyContent="Start">
+        <Label Text="Linha 1" FlexLayout.Order="1" FlexLayout.Basis="20%" FlexLayout.Grow="1" Padding="10" BackgroundColor="RosyBrown"/>
+        <Label Text="Linha 2" FlexLayout.Shrink="0" FlexLayout.Order="0" FlexLayout.Basis="100" Padding="10" FlexLayout.AlignSelf="Center" BackgroundColor="SandyBrown"   />
+        <Label Text="Linha 3" FlexLayout.Order="3" FlexLayout.Basis="Auto" Padding="10" FlexLayout.AlignSelf="End" BackgroundColor="SaddleBrown"  />
+        <Label Text="Linha 4" FlexLayout.Order="2" FlexLayout.Basis="50%" Padding="10" FlexLayout.AlignSelf="Stretch" BackgroundColor="Black" TextColor="White"  />
+        <Label Text="Linha 5" FlexLayout.Shrink="0" FlexLayout.Order="2" FlexLayout.Basis="50%" Padding="10" FlexLayout.AlignSelf="Stretch" BackgroundColor="Aquamarine" TextColor="Black"  />
     </FlexLayout>
 </ContentPage>
