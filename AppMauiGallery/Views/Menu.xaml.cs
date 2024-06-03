@@ -20,6 +20,7 @@ public partial class Menu : ContentPage
 
 			foreach (var component in item.Components)
 			{
+				//Monta o menu baseado na lista de Componentes adicionados à lista. 
 				var tap = new TapGestureRecognizer();
 				tap.CommandParameter = component.Page;
 				tap.Tapped += OnTapComponent_Tapped;
