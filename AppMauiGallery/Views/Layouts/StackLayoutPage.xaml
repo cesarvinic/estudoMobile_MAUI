@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiGallery.Views.Layouts.StackLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StackLayoutPage">
+    <!--<VerticalStackLayout>
+        <Label
+            Margin="20"
+            HorizontalOptions="Center"
+            Text="StackLayoutPage"
+            VerticalOptions="Center" />
+    </VerticalStackLayout>-->
+    <StackLayout
+        Padding="20"
+        BackgroundColor="AliceBlue"
+        Orientation="Vertical"
+        Spacing="10">
+        <!--  Aqui dentro pode colocar quantos layouts quiser.  -->
+        <Label BackgroundColor="Gray" Text="Olá Mundo!" />
+        <Button
+            HeightRequest="100"
+            Text="Olá mundo!"
+            WidthRequest="200" />
+        <!--<Button Text="Olá mundo!" HorizontalOptions="Start" VerticalOptions="StartAndExpand" />
+        <Button Text="Olá mundo!" HorizontalOptions="Start" VerticalOptions="StartAndExpand" />-->
+
+        <StackLayout
+            BackgroundColor="CadetBlue"
+            Orientation="Horizontal"
+            Spacing="10">
+            <Button
+                HorizontalOptions="Start"
+                Text="Olá mundo!"
+                VerticalOptions="Start" />
+            <Button
+                HorizontalOptions="Start"
+                Text="Olá mundo!"
+                VerticalOptions="Start" />
+        </StackLayout>
+
+        <!--  Possui as mesmas características que o StackLayout, poré são mais performáticos  -->
+        <VerticalStackLayout Padding="10" BackgroundColor="Aquamarine">
+            <Label Text="Olá Mundo1!" />
+            <Label Text="Olá Mundo2!" />
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout Padding="10" BackgroundColor="Aquamarine">
+            <Label Text="Olá Mundo1!" />
+            <Label Text="Olá Mundo2!" />
+        </HorizontalStackLayout>
+
+    </StackLayout>
+</ContentPage>
