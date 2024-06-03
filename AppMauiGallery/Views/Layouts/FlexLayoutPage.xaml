@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="FlexLayoutPage">
 
-    <FlexLayout Direction="Row" AlignItems="Start" JustifyContent="Start">
+    <FlexLayout Direction="Row" Wrap="Wrap" AlignContent="Start" AlignItems="Start" JustifyContent="Start">
         <Label Text="Linha 1" FlexLayout.Order="1" FlexLayout.Basis="20%" FlexLayout.Grow="1" Padding="10" BackgroundColor="RosyBrown"/>
         <Label Text="Linha 2" FlexLayout.Shrink="0" FlexLayout.Order="0" FlexLayout.Basis="100" Padding="10" FlexLayout.AlignSelf="Center" BackgroundColor="SandyBrown"   />
         <Label Text="Linha 3" FlexLayout.Order="3" FlexLayout.Basis="Auto" Padding="10" FlexLayout.AlignSelf="End" BackgroundColor="SaddleBrown"  />
