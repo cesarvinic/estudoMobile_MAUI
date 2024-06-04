@@ -13,6 +13,7 @@ namespace AppMauiGallery
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Roboto-Italic.ttf", "RobotoItalic");
                 });
 
 #if DEBUG
