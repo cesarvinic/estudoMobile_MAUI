@@ -30,6 +30,42 @@
             Text="Bem vindo ao .NET MAUI" />
 
         <Label
+            LineBreakMode="CharacterWrap"
+            LineHeight="1.5"
+            MaxLines="2"
+            Text="Mussum Ipsum, cacilds vidis litro abertis. Bota 1 metro de cachacis aí pra viagem! A ordem dos tratores não altera o pão duris. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Copo furadis é disculpa de bebadis, arcu quam euismod magna." />
+
+        <Label Padding="10">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span FontAttributes="Bold" Text="Lorem Ipsum " />
+                    <Span
+                        FontAttributes="Italic"
+                        Text="is simply dummy text of the printing"
+                        TextColor="Blue"
+                        TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <!--<TapGestureRecognizer Tapped="OnSpanTapped" />-->
+                            <TapGestureRecognizer Command="{Binding clique}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label
+            Padding="10"
+            BackgroundColor="#F2F2F2"
+            FontAttributes="Bold"
+            FontSize="20"
+            HeightRequest="150"
+            HorizontalTextAlignment="Center"
+            Text=".NET MAUI"
+            VerticalOptions="FillAndExpand"
+            VerticalTextAlignment="Center" />
+
+        <Label
             Padding="10"
             BackgroundColor="Gray"
             HorizontalOptions="FillAndExpand"
