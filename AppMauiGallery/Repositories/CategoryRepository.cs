@@ -63,8 +63,13 @@ namespace MauiGallery.Repositories
                         Title="Label",
                         Description="Apresenta um texto na tela.",
                         Page = typeof(LabelPage)
+                    },
+                    new Component 
+                    {
+                        Title="Button",
+                        Description="Apresenta um botão na tela",
+                        Page = typeof(ButtonPage)
                     }
-
                 }
             });
 
