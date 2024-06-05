@@ -43,12 +43,6 @@ namespace MauiGallery.Repositories
                         Title = "FlexLayout",
                         Description="Organiza os elementos de forma sequencial com muitas opções de personalização",
                         Page = typeof(FlexLayoutPage)
-                    },
-                    new Component
-                    { 
-                        Title="ImageButtonPage",
-                        Description="Apresenta uma imagem com comportamento de botão",
-                        Page = typeof(ImageButtonPage)
                     }
                 }
             });
@@ -81,6 +75,12 @@ namespace MauiGallery.Repositories
                         Title="Image",
                         Description="Apresenta uma imagem na tela",
                         Page = typeof(ImagePage)
+                    },
+                    new Component
+                    {
+                        Title="ImageButtonPage",
+                        Description="Apresenta uma imagem com comportamento de botão",
+                        Page = typeof(ImageButtonPage)
                     }
                 }
             });
