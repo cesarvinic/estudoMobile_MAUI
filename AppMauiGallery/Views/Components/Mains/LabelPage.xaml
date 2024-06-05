@@ -45,7 +45,6 @@
                         TextColor="Blue"
                         TextDecorations="Underline">
                         <Span.GestureRecognizers>
-                            <!--<TapGestureRecognizer Tapped="OnSpanTapped" />-->
                             <TapGestureRecognizer Command="{Binding clique}" />
                         </Span.GestureRecognizers>
                     </Span>
@@ -53,7 +52,8 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-
+        <!--<TapGestureRecognizer Tapped="OnSpanTapped" />-->
+        
         <Label
             Padding="10"
             BackgroundColor="#F2F2F2"

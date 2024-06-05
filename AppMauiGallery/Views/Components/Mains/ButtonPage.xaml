@@ -17,14 +17,15 @@
 
             HeightRequest="60"
             HorizontalOptions="Center"
-            
-            ImageSource="dotnet_bot.png"
-            
+    
+            ImageSource="dotnet_bot_dois.svg"
+    
             Pressed="Button_Pressed"
             Released="Button_Released"
             Clicked="Button_Clicked"
             />
 
-        <Label x:Name="lbLog" />
+        <Label x:Name="lbLog"/>
     </VerticalStackLayout>
+
 </ContentPage>

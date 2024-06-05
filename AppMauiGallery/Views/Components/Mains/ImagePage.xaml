@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiGallery.Views.Components.Mains.ImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ImagePage">
+    <VerticalStackLayout>
+        <!--  Aspect="AspectFit"  -->
+        <!--IsOpaque="True" - Informa que a imagem possui um fundo transparente-->
+        <!--IsAnimationPlaying="True" - Informa que a imagem é um gif, e o torna animado-->
+        
+        <Image x:Name="imgPinguin"
+            Aspect="Fill"
+            BackgroundColor="Gray"
+            HeightRequest="400"
+            Source="https://i.pinimg.com/736x/bc/ac/52/bcac5211f6f848fdc74fe5f962905b31.jpg"
+            WidthRequest="400" 
+            IsOpaque="True"
+            />
+
+        <!--  Aspect="Center", centraliza a imagem e coloca ela no tamanho original  -->
+        <Image Aspect="Center" Source="dotnet_bot_dois.png" />
+    </VerticalStackLayout>
+</ContentPage>
