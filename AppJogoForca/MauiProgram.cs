@@ -19,6 +19,14 @@ namespace AppJogoForca
     		builder.Logging.AddDebug();
 #endif
 
+              // Configuração da SplashScreen
+//            builder.ConfigureMauiHandlers(handlers =>
+//            {
+//#if ANDROID
+//            handlers.AddHandler(typeof(SplashScreen), typeof(MySplashScreenHandler));
+//#endif
+//            });
+
             return builder.Build();
         }
     }
