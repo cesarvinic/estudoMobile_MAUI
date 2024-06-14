@@ -16,6 +16,9 @@ public partial class Menu : ContentPage
 			lblCategory.Text = item.Name;
 			lblCategory.FontFamily = "OpenSansSemibold";
 
+			lblCategory.FontSize = 16;
+			lblCategory.TextColor = new Color(0, 0, 0);
+
 			this.MenuContainer.Children.Add(lblCategory);
 
 			foreach (var component in item.Components)
@@ -29,12 +32,16 @@ public partial class Menu : ContentPage
 				lblComponentTitle.Text = component.Title;
 				lblComponentTitle.FontFamily = "OpenSansSemibold";
 				lblComponentTitle.Margin = new Thickness(20, 10, 0, 0);
-				lblComponentTitle.GestureRecognizers.Add(tap);
+				lblComponentTitle.FontSize = 14;
+				lblComponentTitle.TextColor = new Color(20, 95, 212);
+                lblComponentTitle.GestureRecognizers.Add(tap);
 
 				var lblComponentDescription = new Label();
 				lblComponentDescription.Text = component.Description;
 				lblComponentDescription.Margin = new Thickness(20, 0, 0, 0 );
-				lblComponentTitle.GestureRecognizers.Add(tap);
+                lblComponentDescription.FontSize = 12;
+                lblComponentDescription.TextColor = new Color(78, 78, 78);
+                lblComponentDescription.GestureRecognizers.Add(tap);
 
                 this.MenuContainer.Children.Add(lblComponentTitle);
                 this.MenuContainer.Children.Add(lblComponentDescription);
