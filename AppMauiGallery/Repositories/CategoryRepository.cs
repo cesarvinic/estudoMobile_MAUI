@@ -1,5 +1,6 @@
 ﻿using MauiGallery.Models;
 using MauiGallery.Views.Components.Mains;
+using MauiGallery.Views.Components.Visuals;
 using MauiGallery.Views.Layouts;
 using System;
 using System.Collections.Generic;
@@ -27,19 +28,19 @@ namespace MauiGallery.Repositories
                         //Page = new StackLayoutPage() //TODO - Performance - Evitar de instanciar páginas em lista. Aumenta muito a memória.
                     },
                     new Component
-                    { 
+                    {
                         Title = "Grid",
                         Description="Organiza os elementos dentro de uma tabela.",
                         Page = typeof(GridLayoutPage)
-                    }, 
-                    new Component 
+                    },
+                    new Component
                     {
                         Title = "AbsoluteLayout",
                         Description="Libertade total para posicionar e dimensionar os elementos na tela.",
                         Page = typeof(AbsoluteLayoutPage)
                     },
                     new Component
-                    { 
+                    {
                         Title = "FlexLayout",
                         Description="Organiza os elementos de forma sequencial com muitas opções de personalização",
                         Page = typeof(FlexLayoutPage)
@@ -53,18 +54,18 @@ namespace MauiGallery.Repositories
                 Components = new List<Component>
                 {
                     new Component
-                    { 
+                    {
                         Title="BoxView",
                         Description="Um componente que cria uma caixa para ser apresentada",
                         Page = typeof(BoxViewPage)
-                    }, 
+                    },
                     new Component
-                    { 
+                    {
                         Title="Label",
                         Description="Apresenta um texto na tela.",
                         Page = typeof(LabelPage)
                     },
-                    new Component 
+                    new Component
                     {
                         Title="Button",
                         Description="Apresenta um botão na tela",
@@ -82,6 +83,31 @@ namespace MauiGallery.Repositories
                         Description="Apresenta uma imagem com comportamento de botão",
                         Page = typeof(ImageButtonPage)
                     }
+                }
+            });
+
+            categories.Add(new Category
+            {
+                Name = "Visuais",
+                Components = new List<Component>
+                {
+                    new Component {
+                        Title = "Frame",
+                        Description="Frame - Caixa que envolve outros elementos, herdado do Xamarin",
+                        Page = typeof(FramePage)
+
+                        //Page = new StackLayoutPage() //TODO - Performance - Evitar de instanciar páginas em lista. Aumenta muito a memória.
+                    },
+                    new Component {
+                        Title = "Border",
+                        Description="Border - Caixa que envolve outros elementos",
+                        Page = typeof(BorderPage)
+                    },
+                    new Component {
+                        Title = "Shadow",
+                        Description="Adiciona uma sombra ao elemento",
+                        Page = typeof(ShadowPage)
+                    },
                 }
             });
 
