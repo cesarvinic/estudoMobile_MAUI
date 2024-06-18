@@ -25,6 +25,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App04", "App04", "{61EA197F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppJogoForca", "AppJogoForca\AppJogoForca.csproj", "{642C4DE8-3411-48A9-A390-FFCC7F1A219B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{87E216B4-1B7E-4B6E-B371-CE9387E9B891}"
+	ProjectSection(SolutionItems) = preProject
+		Citacoes&Codigos.md = Citacoes&Codigos.md
+		Listas.md = Listas.md
+		Paragrafos&EstilosDeTexto.md = Paragrafos&EstilosDeTexto.md
+		Titulos&Divisores.md = Titulos&Divisores.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
